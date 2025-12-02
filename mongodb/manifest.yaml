@@ -27,6 +27,7 @@ spec:
       containers:
       - name: mongodb
         image: surendevops75/mongodb:v1
+        imagePullPolicy: Always
         readinessProbe:
           tcpSocket:
             port: 27017
